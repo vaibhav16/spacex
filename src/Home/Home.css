@@ -1,4 +1,9 @@
-.container{
+.container-fluid{
+    background: lightgray;
+    max-width: 1440px;
+}
+
+#root{
     background: lightgray;
 }
 
@@ -60,3 +65,24 @@ hr{
     border-top: 1px solid lightgrey;
     box-shadow: 1px 1px 1px lightgrey;
 }
+
+.card{
+    /* display: block;
+    position: relative */
+}
+
+@media only screen and (min-width: 768px) {
+    .year-btn {
+      width: 75px;
+    }
+
+    .filter{
+        position: fixed;
+    }
+  }
+
+  @media only screen and (min-width: 1440px) {
+      .filter{
+          max-width: 360px;
+      }
+  }
