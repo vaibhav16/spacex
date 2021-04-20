@@ -1,8 +1,8 @@
 function Card(props) {
 let cardData = {...props.data};
 let land_success = cardData.rocket?.first_stage?.cores[0]?.land_success == true?true:false;
-let missionIds = cardData.mission_id.map((item)=>{
-    return <li>{item.toString()}</li>});
+let missionIds = cardData.mission_id.map((item,index)=>{
+    return <li key={`missionId${index}`}>{item.toString()}</li>});
     return (
 
         <div className="col-xs-12 col-sm-12 col-md-12 col-lg-3 col-xl-3">

@@ -1,10 +1,21 @@
 .container-fluid{
     background: lightgray;
     max-width: 1440px;
+    /* position: relative; */
 }
 
 #root{
     background: lightgray;
+    /* height: 100vh; */
+    min-height: 100%;
+    position:relative;
+}
+#dev-name{
+    width: 100%;
+    left: 0;
+    right: 0;
+    /* position:"absolute";
+    bottom:"25px"; */
 }
 
 .fwb{
