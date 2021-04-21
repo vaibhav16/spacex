@@ -1,7 +1,7 @@
 **Link**: https://desolate-hamlet-22495.herokuapp.com/
 
 
-Page Speed Insights Score:
+**Page Speed Insights Score:**
 1. ****Mobile****
 ![mob](https://user-images.githubusercontent.com/6795073/115614313-2d9a8080-a30b-11eb-8741-553df9c15d53.png)
 
@@ -40,7 +40,7 @@ Page Speed Insights Score:
 
 <br />
 
-4.**Purge CSS **to optimize css
+4.**Purge CSS** to optimize css
 
 
 
