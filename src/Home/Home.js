@@ -48,8 +48,6 @@ function Home() {
             filteredData = res.data.filter((item) => {
                 return item.rocket?.first_stage?.cores[0]?.land_success!=null && item.rocket?.first_stage?.cores[0]?.land_success.toString() == landingStatus})
         }
-
-        console.log(filteredData)
        
         if (filteredData.length > 0) {
             setCards(filteredData.map((item) => { return <Card key={item.flight_number} data={item} /> }));
@@ -70,7 +68,6 @@ function Home() {
             setCards(filteredData.map((item) => { return <Card key={Math.random()} data={item} /> }));
         }
         
-        console.log(filteredData)
     }
 
 

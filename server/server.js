@@ -11,29 +11,66 @@ const app = express();
 
 const PORT = 8000;
 
+const router = express.Router();
 
-app.use('^/$', (req, res, next) => {
-    fs.readFile(path.resolve('./build/index.html'), 'utf-8', (err, data) => {
+app.use('/build',express.static('build'));
+
+app.use((req,res,next)=>{
+    if(/\.js|\.css|\.png/.test(req.path)){
+        res.redirect('/build'+req.path);
+    }
+    else{
+        next();
+    }
+});
+
+
+app.get('*', (req, res) => {
+
+    const context = {};
+        
+    const app = ReactDOMServer.renderToString(
+        <StaticRouter location={req.url} context={context}>
+          <App />
+        </StaticRouter>);
+
+    const indexFile = path.resolve('./build/index.html');   
+
+    fs.readFile(indexFile, 'utf8', (err, data) => {
         if (err) {
             console.log(err);
             return res.status(500).send("Some Error Happened");
         }
-
-    
-        const context = {};
-        
-        const html = ReactDOMServer.renderToString(
-            <StaticRouter location={req.url} context={context}>
-              <App />
-            </StaticRouter>);
-
-      
         return res.send(data.replace('<div id="root"></div>',
-            `<div id="root">${html}</div>`))
+            `<div id="root">${app}</div>`))
     })
 })
 
-app.use(express.static(path.resolve(__dirname, '..', 'build')))
+
+// app.use('^/$', (req, res) => {
+
+      
+//     const context = {};
+        
+//     const html = ReactDOMServer.renderToString(
+//         <StaticRouter location={req.url} context={context}>
+//           <App />
+//         </StaticRouter>);
+
+//     fs.readFile(path.resolve('./build/index.html'), 'utf8', (err, data) => {
+//         if (err) {
+//             console.log(err);
+//             return res.status(500).send("Some Error Happened");
+//         }
+      
+//         return res.send(data.replace('<div id="root"></div>',
+//             `<div id="root">${html}</div>`))
+//     })
+// })
+
+router.use(express.static(path.resolve(__dirname, '..', 'build')))
+
+app.use(router);
 
 
 app.listen(PORT, () => {
