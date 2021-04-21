@@ -9,8 +9,8 @@ Page Speed Insights Score:
 
 <b>What has been done?</b>
 <br />
-1.Scrips have been rendered asychronously and deffered.<br /><br />
-<script  <b> async defer </b> src=""/>
+1.Scrips have been rendered asychronously and deffered.<br />
+<i><script  <b> async defer </b> src=""/></i>
  
  <br />
 
