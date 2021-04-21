@@ -1,10 +1,10 @@
 # Getting Started with Create React App
 
 Page Speed Insights Score:
-1. Mobile
+1. ****Mobile****
 ![mob](https://user-images.githubusercontent.com/6795073/115614313-2d9a8080-a30b-11eb-8741-553df9c15d53.png)
 
-2.Desktop
+2.****Desktop****
 ![Screenshot from 2021-04-22 01-35-44](https://user-images.githubusercontent.com/6795073/115614424-53278a00-a30b-11eb-81ef-b667ab82a455.png)
 
 <b>What has been done?</b>
@@ -30,15 +30,15 @@ Page Speed Insights Score:
 
 <br />
 
-2. Purge CSS to optimize css
+2.Purge CSS to optimize css
 
 <br />
 
-3. closure webpack plugin to remove dead and unused code
+3.closure webpack plugin to remove dead and unused code
 
 <br />
 
-4. Use .svg instead of .png wherever possible
+4.Use .svg instead of .png wherever possible
 
 
 
