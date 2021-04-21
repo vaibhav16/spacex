@@ -26,7 +26,8 @@ Page Speed Insights Score:
 4.**Gzip** enabled for js files
 <br /><br />
 <hr/>
-<b>What else can be done?</b><br />
+<b>What else can be done?</b>
+<br />
 1.The bundle can be made smaller by using **uglifyjs-plugin**. It will remove the white spaces.
 
 <br />
