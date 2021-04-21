@@ -9,9 +9,9 @@ Page Speed Insights Score:
 
 <b>What has been done?</b>
 <br />
-1.Scrips have been rendered asychronously and deffered.<br />
-<i><script  <b> async defer </b> src=""/></i>
- 
+1.Scrips have been rendered asychronously and deffered.
+<br />
+<i><script  <b> async defer </b> src=""/></i> 
  <br />
 
 2.Hooks used: Hooks don't directly impact performance, but they can help achieve the same goal with lesser lines of code. This, in turn helps in creating a smaller bundle
