@@ -119,7 +119,7 @@ function generateDOM(cards, filterYear, filterLaunch, filterLanding) {
             <div className="row">
                 <div className="filter col-xs-12 col-sm-12 col-md-6 col-lg-3 col-xl-3">
 
-                    <div className="row fs-16 m-0 px-2 py-3">
+                    <div className="row fs-14 m-0 px-2 py-3">
                         <div className="col-12 pb-4 bg-white br-16">
                             <div className="row fwb" style={{ fontSize: "22px", marginTop: "10px" }}>
                                 <div className="col-12"> Filters</div>
