@@ -30,15 +30,15 @@ Page Speed Insights Score:
 
 <br />
 
-2.Purge CSS to optimize css
+2.closure webpack plugin to remove dead and unused code
 
 <br />
 
-3.closure webpack plugin to remove dead and unused code
+3.Use .svg instead of .png wherever possible
 
 <br />
 
-4.Use .svg instead of .png wherever possible
+4.Purge CSS to optimize css
 
 
 
