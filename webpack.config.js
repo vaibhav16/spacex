@@ -1,5 +1,6 @@
 var webpack = require('webpack');
 const CompressionPlugin = require('compression-webpack-plugin');
+const CleanWebpackPlugin = require('clean-webpack-plugin');
 
 
 module.exports = {
@@ -20,6 +21,11 @@ module.exports = {
     }]
   },
   plugins: [
+    new CleanWebpackPlugin(['build']),
+    new UglifyJsPlugin(),
+    new webpack.DefinePlugin({
+      'process.env.NODE_ENV':JSON.stringify('production')
+    }),
     new CompressionPlugin({
       algorithm: 'gzip',
       test: /.js$|.css$/,
