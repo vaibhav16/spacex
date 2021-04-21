@@ -46,7 +46,7 @@ function Home() {
         }
         else if(landingStatus){
             filteredData = res.data.filter((item) => {
-                return item.rocket?.first_stage?.cores[0]?.land_success!=null && item.rocket?.first_stage?.cores[0]?.land_success.toString() == landingStatus})
+                return item.rocket && item.rocket.first_stage && item.rocket.first_stage.cores[0] &&  item.rocket.first_stage.cores[0].land_success!=null && item.rocket.first_stage.cores[0].land_success.toString() == landingStatus})
         }
 
         console.log(filteredData)
@@ -89,7 +89,7 @@ function Home() {
     function filterLanding(landingStatus) {
        
         const apiDataTemp = [...apiData.data];
-        let filteredData = apiDataTemp.filter(item => item.rocket?.first_stage?.cores[0]?.land_success == landingStatus)
+        let filteredData = apiDataTemp.filter(item => item.rocket &&  item.rocket.first_stage && item.rocket.first_stage.cores[0] && item.rocket.first_stage.cores[0].land_success == landingStatus)
         if(filteredData.length>0){
             history.push({ search: `?landing=${landingStatus}` });
             setCards(filteredData.map((item) => { return <Card key={Math.random()} data={item} /> }));

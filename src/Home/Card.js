@@ -1,6 +1,6 @@
 function Card(props) {
 let cardData = {...props.data};
-let land_success = cardData.rocket?.first_stage?.cores[0]?.land_success == true?true:false;
+let land_success = cardData.rocket &&  cardData.rocket.first_stage && cardData.rocket.first_stage.cores[0] && cardData.rocket.first_stage.cores[0].land_success != null?cardData.rocket.first_stage.cores[0].land_success:false;
 let missionIds = cardData.mission_id.map((item,index)=>{
     return <li key={`missionId${index}`}>{item.toString()}</li>});
     return (
