@@ -14,7 +14,7 @@ Page Speed Insights Score:
 <i><script  <b> async defer </b> src=""/></i> 
  <br />
 
-2.Hooks used: Hooks don't directly impact performance, but they can help achieve the same goal with lesser lines of code. This, in turn helps in creating a smaller bundle
+2.Hooks used: Hooks don't directly impact performance, but they achieve the same goal as class based components with lesser lines of code. This, in turn helps in creating a smaller bundle
 
 <br />
 
