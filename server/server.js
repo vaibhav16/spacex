@@ -6,11 +6,20 @@ import React from 'react';
 var ReactDOMServer = require('react-dom/server');
 import { StaticRouter } from 'react-router-dom';
 import App from '../src/App';
+var expressStaticGzip = require("express-static-gzip");
 
 const app = express();
 
 const PORT = 8000;
 
+app.use("/", expressStaticGzip("build",{
+    enableBrotli: true,
+    customCompressions: [{
+        encodingName: 'deflate',
+        fileExtension: 'zz'
+    }],
+    orderPreference: ['br']
+}));
 
 app.use('^/$', (req, res, next) => {
     fs.readFile(path.resolve('./build/index.html'), 'utf-8', (err, data) => {
