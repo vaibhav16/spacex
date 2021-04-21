@@ -10,11 +10,11 @@ let missionIds = cardData.mission_id.map((item,index)=>{
                 <div className="row">
                     <div className="col-12 bg-white br-16 fs-14 p-3">
                         <div className="row img-center">
-                            <img style={{ height: 120 }} src={cardData.links.mission_patch_small} />
+                            <img className="mission-img" src={cardData.links.mission_patch_small} />
                         </div>
 
                         <div className="row fwb py-1">
-                            <div className="col-12 clr-blue">{cardData.mission_name}</div>
+                            <div className="col-12 clr-darkblue">{cardData.mission_name}</div>
                         </div>
                         <div className="row pt-1">
                             <div style={{display:"block"}} className="col-12 fwb">Mission Ids:</div>
