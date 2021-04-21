@@ -24,9 +24,9 @@ What has been done?
 <br />
 
 4.Gzip enabled for js files
+<br /><br />
 
-
-What else can be done?
+What else can be done?<br />
 1.The bundle can be made smaller by using uglifyjs-plugin. It will remove the white spaces.
 
 <br />
