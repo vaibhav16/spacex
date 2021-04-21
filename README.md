@@ -7,7 +7,7 @@ Page Speed Insights Score:
 
 2.****Desktop****
 ![Screenshot from 2021-04-22 01-35-44](https://user-images.githubusercontent.com/6795073/115614424-53278a00-a30b-11eb-81ef-b667ab82a455.png)
-
+<hr/>
 <b>What has been done?</b>
 <br />
 1.Scrips have been rendered asychronously and deffered.
@@ -25,7 +25,7 @@ Page Speed Insights Score:
 
 4.**Gzip** enabled for js files
 <br /><br />
-
+<hr/>
 <b>What else can be done?</b><br />
 1.The bundle can be made smaller by using **uglifyjs-plugin**. It will remove the white spaces.
 
