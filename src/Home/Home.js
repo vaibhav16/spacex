@@ -3,7 +3,8 @@ import { useHistory } from 'react-router-dom'
 import React from 'react';
 import axios from 'axios';
 import Card from './Card';
-import './Home.css'
+import './Home.css';
+import { memo }  from 'react';
 
 function Home() {
     const [apiData, setApiData] = useState({});
@@ -214,4 +215,4 @@ function generateDOM(cards, filterYear, filterLaunch, filterLanding) {
     )
 }
 
-export default Home;
+export default memo(Home);
