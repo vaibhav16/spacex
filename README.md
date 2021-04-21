@@ -15,31 +15,31 @@ Page Speed Insights Score:
 <i><script  <b> async defer </b> src=""/></i> 
  <br />
 
-2.Hooks used: Hooks don't directly impact performance, but they achieve the same goal as class based components with lesser lines of code. This, in turn helps in creating a smaller bundle
+2.**Hooks used**: Hooks don't directly impact performance, but they achieve the same goal as class based components with lesser lines of code. This, in turn helps in creating a smaller bundle
 
 <br />
 
-3.The functional Components have been binded with React.memo() to ensure less number of updates.
+3.The functional Components have been binded with **React.memo()** to ensure less number of updates.
 
 <br />
 
-4.Gzip enabled for js files
+4.**Gzip** enabled for js files
 <br /><br />
 
 <b>What else can be done?</b><br />
-1.The bundle can be made smaller by using uglifyjs-plugin. It will remove the white spaces.
+1.The bundle can be made smaller by using **uglifyjs-plugin**. It will remove the white spaces.
 
 <br />
 
-2.closure webpack plugin to remove dead and unused code
+2.**closure-webpack-plugin** to remove dead and unused code
 
 <br />
 
-3.Use .svg instead of .png wherever possible
+3.Use **.svg** instead of .png wherever possible
 
 <br />
 
-4.Purge CSS to optimize css
+4.**Purge CSS **to optimize css
 
 
 
